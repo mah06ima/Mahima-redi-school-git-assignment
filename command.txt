@@ -1,1 +1,222 @@
-Hello world
+Mahima@Surface MINGW64 ~/test_git
+$ git clone https://github.com/mahima/Mahima-redi-school-git-assignment.git
+Cloning into 'Mahima-redi-school-git-assignment'...
+info: please complete authentication in your browser...
+remote: Repository not found.
+fatal: repository 'https://github.com/mahima/Mahima-redi-school-git-assignment.git/' not found
+
+Mahima@Surface MINGW64 ~/test_git
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+Mahima@Surface MINGW64 ~/test_git
+$ pwd
+/c/Users/Mahima/test_git
+
+Mahima@Surface MINGW64 ~/test_git
+$ cd Mahima-redi-school-git-assignment
+
+Mahima@Surface MINGW64 ~/test_git/Mahima-redi-school-git-assignment (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        command.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Mahima@Surface MINGW64 ~/test_git/Mahima-redi-school-git-assignment (main)
+$ git add command.txt
+
+Mahima@Surface MINGW64 ~/test_git/Mahima-redi-school-git-assignment (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   command.txt
+
+
+Mahima@Surface MINGW64 ~/test_git/Mahima-redi-school-git-assignment (main)
+$ git commit-m "created a command file"
+git: 'commit-m' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit-tree
+
+Mahima@Surface MINGW64 ~/test_git/Mahima-redi-school-git-assignment (main)
+$ git push
+info: please complete authentication in your browser...
+Everything up-to-date
+
+Mahima@Surface MINGW64 ~/test_git/Mahima-redi-school-git-assignment (main)
+$ gs
+bash: gs: command not found
+
+Mahima@Surface MINGW64 ~/test_git/Mahima-redi-school-git-assignment (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   command.txt
+
+
+Mahima@Surface MINGW64 ~/test_git/Mahima-redi-school-git-assignment (main)
+$ git push origin/main
+fatal: 'origin/main' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Mahima@Surface MINGW64 ~/test_git/Mahima-redi-school-git-assignment (main)
+$ git push origin
+Everything up-to-date
+
+Mahima@Surface MINGW64 ~/test_git/Mahima-redi-school-git-assignment (main)
+$ git push main
+fatal: 'main' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Mahima@Surface MINGW64 ~/test_git/Mahima-redi-school-git-assignment (main)
+$ git push master
+fatal: 'master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Mahima@Surface MINGW64 ~/test_git/Mahima-redi-school-git-assignment (main)
+$ git push origin main
+Everything up-to-date
+
+Mahima@Surface MINGW64 ~/test_git/Mahima-redi-school-git-assignment (main)
+$ gít log
+bash: gít: command not found
+
+Mahima@Surface MINGW64 ~/test_git/Mahima-redi-school-git-assignment (main)
+$ git log
+commit adca092c8266a97a7617b90ac4f966c73f73e9f5 (HEAD -> main, origin/main, origin/HEAD)
+Author: Mahima Kasturi <122186387+mah06ima@users.noreply.github.com>
+Date:   Fri May 16 11:13:11 2025 +0200
+
+    Initial commit
+
+Mahima@Surface MINGW64 ~/test_git/Mahima-redi-school-git-assignment (main)
+$ git branch
+* main
+
+Mahima@Surface MINGW64 ~/test_git/Mahima-redi-school-git-assignment (main)
+$ git push origin main
+Everything up-to-date
+
+Mahima@Surface MINGW64 ~/test_git/Mahima-redi-school-git-assignment (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   command.txt
+
+
+Mahima@Surface MINGW64 ~/test_git/Mahima-redi-school-git-assignment (main)
+$ git commit-m "created a command file"
+git: 'commit-m' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit-tree
+
+Mahima@Surface MINGW64 ~/test_git/Mahima-redi-school-git-assignment (main)
+$ git commit -m "created a command file"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Mahima@Surface.(none)')
+
+Mahima@Surface MINGW64 ~/test_git/Mahima-redi-school-git-assignment (main)
+$ git commit --message "created a command file"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Mahima@Surface.(none)')
+
+Mahima@Surface MINGW64 ~/test_git/Mahima-redi-school-git-assignment (main)
+$ ^C
+
+Mahima@Surface MINGW64 ~/test_git/Mahima-redi-school-git-assignment (main)
+$ git config --global user.name "Mahima"
+
+Mahima@Surface MINGW64 ~/test_git/Mahima-redi-school-git-assignment (main)
+$ ^C
+
+Mahima@Surface MINGW64 ~/test_git/Mahima-redi-school-git-assignment (main)
+$ git config --global user.email "mahimakasturi06@gmail.com"
+
+Mahima@Surface MINGW64 ~/test_git/Mahima-redi-school-git-assignment (main)
+$ git commit --message "created a command file"
+[main 26fcdc7] created a command file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 command.txt
+
+Mahima@Surface MINGW64 ~/test_git/Mahima-redi-school-git-assignment (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Mahima@Surface MINGW64 ~/test_git/Mahima-redi-school-git-assignment (main)
+$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 296 bytes | 296.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/mah06ima/Mahima-redi-school-git-assignment.git
+   adca092..26fcdc7  main -> main
+
+Mahima@Surface MINGW64 ~/test_git/Mahima-redi-school-git-assignment (main)
+$ git log
+commit 26fcdc76d0a6b43bb59a763a3bc4422848d138ca (HEAD -> main, origin/main, origin/HEAD)
+Author: Mahima <mahimakasturi06@gmail.com>
+Date:   Fri May 16 16:30:16 2025 +0200
+
+    created a command file
+
+commit adca092c8266a97a7617b90ac4f966c73f73e9f5
+Author: Mahima Kasturi <122186387+mah06ima@users.noreply.github.com>
+Date:   Fri May 16 11:13:11 2025 +0200
+
+    Initial commit
+
+
+Here, I created a file and added to repository.
